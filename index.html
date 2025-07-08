@@ -1,182 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAT Cargo VAD LLC</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
-        }
-        nav {
-            background: #000;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            padding: 80px 20px;
-            background: #111;
-            color: #fff;
-            min-height: 100vh;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .hero-text {
-            max-width: 500px;
-            padding: 20px;
-            animation: slideInLeft 1.5s ease;
-        }
-        .hero-text h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .hero-text p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .hero-img img {
-            max-width: 400px;
-            width: 100%;
-            border-radius: 10px;
-            animation: slideInRight 1.5s ease;
-        }
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 1s ease;
-        }
-        .section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .section p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #555;
-        }
-        .contact {
-            background: #e9e9e9;
-            padding: 60px 20px;
-        }
-        footer {
-            background: #000;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideInLeft {
-            from { transform: translateX(-50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        @keyframes slideInRight {
-            from { transform: translateX(50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTIORO</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f1f1f1; color: #333; }
+    header, footer { background-color: #003f5c; color: white; padding: 30px; text-align: center; }
+    section { padding: 40px 20px; display: flex; align-items: center; gap: 30px; border-bottom: 1px solid #ddd; background-color: #ffffff; }
+    img { max-width: 300px; border-radius: 12px; height: auto; }
+    .content { max-width: 700px; }
+    h2 { color: #003f5c; }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>ESTIORO</h1>
+    <p>contact@estioro.shop | +212723493639</p>
+  </header>
 
-    <nav>
-        <div class="logo">PAT Cargo VAD LLC</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="hero" id="home">
-        <div class="hero-text">
-            <h1>PAT Cargo VAD LLC</h1>
-            <p>Your trusted partner in transportation and warehousing. We provide reliable cargo services and storage solutions to meet your business needs with efficiency and care.</p>
-        </div>
-        <div class="hero-img">
-            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=934&q=80" alt="Cargo Services">
-        </div>
+  <section>
+    <img src="https://source.unsplash.com/300x200/?logistics" alt="Transport">
+    <div class="content">
+      <h2>Présentation</h2>
+      <p>ESTIORO est une entreprise marocaine basée à Dakhla spécialisée dans le transport routier, les services de soins personnels et la logistique locale. Nous nous engageons à offrir des solutions efficaces, sécurisées et personnalisées à nos clients à travers tout le territoire.</p>
     </div>
+  </section>
 
-    <div class="section" id="about">
-        <h2>About Us</h2>
-        <p>PAT Cargo VAD LLC is a Domestic LLC based in Arizona, offering specialized services in transportation and warehousing. With a focus on reliability and customer satisfaction, we have been serving businesses since 2021.</p>
-        <p><strong>Registered Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
+  <section>
+    <img src="https://source.unsplash.com/300x200/?freight" alt="Freight">
+    <div class="content">
+      <h2>Nos Activités</h2>
+      <p>Nous opérons dans divers secteurs : fret général, transport de biens, services de livraison, soins esthétiques et entretien local. Notre polyvalence nous permet de répondre à une large gamme de besoins avec rigueur et professionnalisme.</p>
     </div>
+  </section>
 
-    <div class="section contact" id="contact">
-        <h2>Contact Us</h2>
-        <p><strong>Email:</strong> <a href="mailto:contact@patcargovadllc.click">contact@patcargovadllc.click</a></p>
-        <p><strong>Agent Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
+  <section>
+    <img src="https://source.unsplash.com/300x200/?warehouse" alt="Warehouse">
+    <div class="content">
+      <h2>Nos Installations</h2>
+      <p>Située à Dakhla, notre base logistique est équipée pour accueillir, stocker et redistribuer tout type de marchandise. Elle nous permet d’assurer des services rapides et fiables, même dans les zones les plus éloignées du royaume.</p>
     </div>
+  </section>
 
-    <footer>
-        &copy; 2025 PAT Cargo VAD LLC. All rights reserved.
-    </footer>
+  <section>
+    <img src="https://source.unsplash.com/300x200/?teamwork" alt="Team">
+    <div class="content">
+      <h2>Notre Équipe</h2>
+      <p>Notre équipe est composée de professionnels expérimentés, animés par un esprit de collaboration et un souci constant de qualité. Chaque membre contribue à faire d’ESTIORO un partenaire de confiance dans le domaine du service et du transport.</p>
+    </div>
+  </section>
 
-    <script>
-        // Intersection Observer for fade-in effect
-        const sections = document.querySelectorAll('.section');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
+  <section>
+    <img src="https://source.unsplash.com/300x200/?services" alt="Services">
+    <div class="content">
+      <h2>Engagement Client</h2>
+      <p>Nous plaçons la satisfaction client au cœur de notre stratégie. Flexibilité, écoute, transparence et réactivité sont nos maîtres mots. Notre objectif est d’établir des relations durables fondées sur la confiance et l’excellence de nos prestations.</p>
+    </div>
+  </section>
 
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+  <section>
+    <img src="https://source.unsplash.com/300x200/?contact" alt="Contact">
+    <div class="content">
+      <h2>Contact & Coordonnées</h2>
+      <p>Pour toute demande de service ou de partenariat, n'hésitez pas à nous contacter par email à <strong>contact@estioro.shop</strong> ou par téléphone au <strong>+212723493639</strong>. Nous sommes situés à BLOC 5 N 58 CENTRE BIRGANDOUZ, HAY AOUDA 1, DAKHLA 73000.</p>
+    </div>
+  </section>
 
+  <footer>
+    <p>© 2025 ESTIORO – Tous droits réservés</p>
+  </footer>
 </body>
 </html>
